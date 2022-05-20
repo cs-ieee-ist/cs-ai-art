@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charSet="utf-8" />
+    <meta name="description" content="CS AI ART by IEEE-IST CS" />
+    <meta property="og:image"
+        content="https://og-image.now.sh/CS%20AI%20ART%20by%20IEEE-IST%20CS.png?theme=light&amp;md=0&amp;fontSize=75px&amp;images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg" />
+    <meta name="og:title" content="CS AI ART by IEEE-IST CS" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <title>CS AI ART by IEEE-IST CS</title>
+    <script type="module" src="./main.mjs"></script>
+    <link rel="stylesheet" href="./main.css" as="css" />
+</head>
+
+<body>
+    <header>
+        <div class="header__left">
+
+        <div class="logo">
+            <img src="assets/logo-cs.png" alt="cs">
+        </div>
+        </div>
+
+        <div class="header__right">
+            <button class="menu-btn" id="about-btn"><img src="assets/information.svg" width="32px" height="32px"></button>
+        </div>
+    </header>
+    <main>
+        <about-card id="about"></about-card>
+        <card-list ></card-list>
+    </main>
+
+    <script>
+        document.getElementById("about-btn").onclick = () => {
+            console.log("asdas")
+            console.log(document.getElementById("about"))
+            document.getElementById("about").classList.add("active");
+        }
+
+    </script>
+</body>
+
+</html>
